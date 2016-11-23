@@ -1,0 +1,68 @@
+body {
+	text-align: center;
+}
+
+nav {
+	background: hotpink;
+}
+
+.container {
+	background: green;
+	display:flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+main {
+	background: gold;
+	flex-basis: 65%;
+	order: 2;
+}
+
+aside {
+	background: deepskyblue;
+	flex-basis: 30%;
+	order: 1;
+}
+
+.cover-image {
+	background-image: url(https://pbs.twimg.com/profile_banners/951797118/1442179644/600x200);
+	height: 100px;
+	border-radius: 4px 4px 0 0;
+	background-size: 100%;
+}
+
+.profile-pic {
+	height:70px;
+    width: 70px;
+    background-image: url(https://pbs.twimg.com/profile_images/715909253383471105/dqEseXfE_bigger.jpg);
+    border: 3px solid #fff;
+    border-radius: 6px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.profile-stats {
+	display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		flex-direction: column;
+	}
+
+	main {
+		order: 1;
+	}
+
+	aside {
+		order: 2;
+	}
+
+} 
+
+
+
