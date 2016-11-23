@@ -1,70 +1,189 @@
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 500;
-  text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    background-color: #C0DEED;
+    background-image: url(https://abs.twimg.com/images/themes/theme1/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-nav { 
-	background: hotpink; 
+nav {
+	background: hotpink;
 }
 
 .container {
-	background: grey;
-	display: flex;
-	justify-content: space-around;
+	background: green;
+	display:flex;
+	width: 80%;
 	margin: 0 auto;
-  	width: 80.708333333333%;
+	justify-content: space-between;
 }
 
 main {
-    background: gold;
-    flex-basis: 65%;
-    order: 2;
+	background: white;
+	flex-basis: 65%;
+	order: 2;
 }
-   
+
 aside {
-    background: deepskyblue;
-    flex-basis: 30%; 
-    order: 1;
+	background: deepskyblue;
+	flex-basis: 30%;
+	order: 1;
 }
 
 .cover-image {
-    	background-image: url(https://pbs.twimg.com/profile_banners/951797118/1442179644/600x200);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 96px;
-        border:none;
-        border-radius: 4px 4px 0 0;      
+	background-image: url(https://pbs.twimg.com/profile_banners/951797118/1442179644/600x200);
+	height: 100px;
+	border-radius: 4px 4px 0 0;
+	background-size: 100%;
 }
 
+.profile {
+	background-color: white;
+    border-radius: 4px;
+}
 
 .profile-pic {
-    height:70px;
+	height:70px;
     width: 70px;
     background-image: url(https://pbs.twimg.com/profile_images/715909253383471105/dqEseXfE_bigger.jpg);
+    border: 3px solid #fff;
     border-radius: 6px;
-    margin-top: -30px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.profile-stats {
+	display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.stat--heading {
+    color: #8c9ca9;
+    font-size: 10px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out;
+    width: 80px;
+}
+
+.stat--value {
+    display: block;
+    font-size: 18px;
+    padding-top: 3px;
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+    color: #0084B4 !important;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+#profile-handle {
+	color: #8899a6;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.header {
+	margin-top: -40px;
+    margin-left: 89px;
+    width: 185px;
+}
+
+.profile-name {
+	font-size: 18px;
+    line-height: 21px;
+}
+
+.profile-handle {
+	color: #8899a6;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.feed_title {
+	margin-top: 0px;
+    margin-left: 0px;
+    height: 47px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.feed_title h3 {
+	font-size: 22px;
+    font-weight: 300;
+    color: #66757f;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tweet {
+	border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    margin-left: 0px;
+    margin-top: 0px;
+    border-top: none;
+    height: 83px;
+    border-radius: 0px;
+}
+
+.tweet img {
+	border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tweet h3 {
+	border: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    color: #292f33;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content {
+	float: right;
+    border-radius: 6px;
+    font-size: 14px;
+    display: block;
+    border: none;
+    width: 87%;
+    margin-top: 6px;
+    margin-left: 10px;
+    line-height: 17px;
+}
+
+.handle {
+	float: left;
+    border: none;
+    width: 220px;
+    display: inline-block;
+    margin-top: 11px;
     margin-left: 8px;
-    border:3px solid #fff;
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .container { 
-    	flex-flow: column wrap;
-    	padding: 0;
-    }
+	.container {
+		flex-direction: column;
+	}
 
 	main {
-	    order: 1;
+		order: 1;
 	}
-   
-	aside {
-	    order: 2;
-	}
-}
 
-  
+	aside {
+		order: 2;
+	}
+
+} 
